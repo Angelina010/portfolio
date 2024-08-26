@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+ul {
+    list-style: none;
+    display : flex;
+    gap: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.projects-container {
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.projects-container div{
+    border: 2px solid red;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
