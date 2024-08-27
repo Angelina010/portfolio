@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 
-ul {
+nav ul {
     list-style: none;
     display: flex;
     gap: 16px;
+    margin: 0;
+}
+
+ul {
+    margin-left : 16px;
 }
 
 a {
@@ -17,16 +22,17 @@ a {
 .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    gap: 80px 32px;
     margin-left: 20%;
     margin-right: 20%;
 }
 
-.projects-container div {
+.project-box{
     border: 2px solid red;
     aspect-ratio: 4 / 3;
     position: relative;
 }
+
 
 .projects-container img, .projects-container video {
     position: absolute;
@@ -37,9 +43,30 @@ a {
 }
 
 .projects-container img {
-    z-index: 2;
+    z-index: 1;
 }
 
 .projects-container video {
-    z-index: 1;
+    z-index: 2; /*Video is on top of image to register mouseenter events*/
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-box.text {
+    display : flex;
+    flex-direction: column;
+    gap : 16px;
+}
+
+.project-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.content {
+    flex-grow: 1;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
 }
