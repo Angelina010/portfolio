@@ -1,33 +1,45 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 ul {
     list-style: none;
-    display : flex;
+    display: flex;
     gap: 16px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 .projects-container {
-    display : grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
     margin-left: 20%;
     margin-right: 20%;
 }
 
-.projects-container div{
+.projects-container div {
     border: 2px solid red;
+    aspect-ratio: 4 / 3;
+    position: relative;
 }
 
-img {
+.projects-container img, .projects-container video {
+    position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /*Crop the image to cover the box while preserving aspect ratio */
     border-radius: 10px;
+}
+
+.projects-container img {
+    z-index: 2;
+}
+
+.projects-container video {
+    z-index: 1;
 }
