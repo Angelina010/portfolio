@@ -19,6 +19,10 @@ ul {
     margin-left : 16px;
 }
 
+li {
+    padding: 2px;
+}
+
 a {
     text-decoration: none;
     color : black;
