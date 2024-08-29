@@ -5,7 +5,8 @@
 }
 
 body{
-    background-color: rgb(143, 203, 255);
+    background-color:   #d5eaff;
+    color: #333333;
 }
 
 nav ul {
@@ -13,6 +14,9 @@ nav ul {
     display: flex;
     gap: 16px;
     margin: 0;
+    background-color: #ecf5ff;
+    padding: 16px;
+    border-bottom: 2px solid #E0E4E8;
 }
 
 ul {
@@ -21,11 +25,17 @@ ul {
 
 li {
     padding: 2px;
+    font-size: 1.1rem;
 }
 
 a {
     text-decoration: none;
     color : black;
+    color: #2A7DE1;
+}
+
+a:hover {
+    color: #1A5CBF;
 }
 
 .projects-container {
@@ -43,6 +53,7 @@ a {
     border-radius: 10px;
     overflow: hidden; /*Hides rectangular corners of the images, so images fits into the boxes' rounded corners*/
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    background-color: #FFFFFF;
 }
 
 
@@ -68,6 +79,8 @@ a {
     flex-direction: column;
     gap : 16px;
     padding : 16px;
+    background-color: #FFFFFF;
+    color: #555555;
 }
 
 .project-name {
@@ -81,4 +94,12 @@ a {
 .project-links {
     display: flex;
     justify-content: space-between;
+}
+
+.heading {
+    text-align: center;
+    color: #2A7DE1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
 }
