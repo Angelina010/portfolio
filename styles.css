@@ -9,6 +9,24 @@ body{
     color: #333333;
 }
 
+section {
+    margin-bottom: 3%;
+}
+
+h1 {
+    text-align: center;
+    color: #2A7DE1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+h2 {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+}
+
 nav, footer {
     display: flex;
     background-color: #ecf5ff;
@@ -24,6 +42,19 @@ nav ul {
     display: flex;
     gap: 16px;
 }
+
+nav img, footer img {
+    filter: brightness(60%);
+    margin-right: 16px;
+    max-width: 20px;
+    height: auto;
+}
+
+footer {
+    justify-content: center;
+    gap: 4px;
+}
+
 
 ul {
     margin-left : 16px;
@@ -62,7 +93,6 @@ a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     background-color: #FFFFFF;
 }
-
 
 .projects-container img, .projects-container video {
     position: absolute;
@@ -103,14 +133,6 @@ a:hover {
     justify-content: space-between;
 }
 
-.heading {
-    text-align: center;
-    color: #2A7DE1;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-}
-
 .about-container{
     display : flex;
     justify-content: center;
@@ -132,29 +154,9 @@ a:hover {
     object-fit: cover;
 }
 
-h2 {
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 2%;
-}
-
-section {
-    margin-bottom: 3%;
-}
-
-nav img, footer img {
-    filter: brightness(60%);
-    margin-right: 16px;
-    max-width: 20px;
-    height: auto;
-}
-
-footer {
-    justify-content: center;
-}
 
 .mail {
     display: flex;
-    gap: 4px;
+    gap: 2px;
     align-items: center;
 }
