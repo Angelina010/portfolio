@@ -5,6 +5,9 @@
 - **Interactive Project Previews**: Hover over project thumbnails to see video previews in action.
 - **Contact Information**: Find my email and links to my LinkedIn and GitHub profiles.
 
+## Live Preview
+View the portfolio website [here](https://angelina010.github.io/portfolio/)
+
 ## Technologies Used
 
 - **HTML**
