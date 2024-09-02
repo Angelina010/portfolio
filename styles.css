@@ -46,9 +46,9 @@ h1 {
 }
 
 h2 {
-    margin-left: 30%;
-    margin-right: 30%;
+    max-width: 550px;
     margin-top: 2%;
+    margin: 32px
 }
 
 nav, footer {
@@ -103,13 +103,19 @@ a:hover {
     color: var(--hover-link-color);
 }
 
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px 32px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 0px 32px;
 }
+
 
 .project-box{
     aspect-ratio: 4 / 3;
@@ -119,6 +125,7 @@ a:hover {
     overflow: hidden; /*Hides rectangular corners of the images, so images fits into the boxes' rounded corners*/
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     background-color: var(--project-box-background-color);
+    max-width: 420px;
 }
 
 .projects-container img, .projects-container video {
@@ -189,4 +196,21 @@ a:hover {
 
 .dark-mode-icon {
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .project-box.text{
+        margin-bottom: 32px;
+        overflow-y: auto;
+
+    }
+
+    .project-name {
+        font-size: 1.6rem;
+    }
 }
