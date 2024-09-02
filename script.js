@@ -21,16 +21,29 @@ const projectBoxes = document.querySelectorAll(".project-box.graphic");
 projectBoxes.forEach((box)=>{
     const video = box.querySelector("video");
     
-    box.addEventListener("mouseenter", () => {
+    const playVideo = () => {
         video.currentTime = 0;
         video.style.opacity = 1;
         video.play();
-    })
+    };
 
-    box.addEventListener("mouseleave", () => {
+    const pauseVideo = () => {
         video.pause();
         video.style.opacity = 0;
-    })
+    };
+
+    // Add mouseenter event for non-touch devices
+    box.addEventListener("mouseenter", playVideo);
+    box.addEventListener("mouseleave", pauseVideo);
+
+    // Add click event for touch devices
+    box.addEventListener("click", () => {
+        if (video.paused) {
+            playVideo();
+        } else {
+            pauseVideo();
+        }
+    });
 })
 
 
