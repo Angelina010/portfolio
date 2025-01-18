@@ -20,6 +20,10 @@ darkModeIcon.addEventListener("click", setTheme)
 const projectBoxes = document.querySelectorAll(".project-box.graphic");
 projectBoxes.forEach((box)=>{
     const video = box.querySelector("video");
+
+    if (video){
+
+    
     
     const playVideo = () => {
         video.currentTime = 0;
@@ -44,6 +48,8 @@ projectBoxes.forEach((box)=>{
             pauseVideo();
         }
     });
+}
 })
+
 
 

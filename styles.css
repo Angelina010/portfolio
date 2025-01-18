@@ -146,7 +146,7 @@ a:hover {
 }
 
 .play-icon {
-    display: none;
+    display: block;
     z-index: 3;
     position: absolute;
     top: 8px;
